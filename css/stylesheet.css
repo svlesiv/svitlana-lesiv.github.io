@@ -17,9 +17,19 @@ aside  {background-color: hsl(113, 44%, 51%);}
 footer {background-color: hsl(193, 44%, 51%);}
 
 
+/*IE fallback*/
+main {
+	padding:0;	
+}
+main > *{
+	background-color: hsl(83, 44%, 51%);
+	padding:1em;
+}
+
+
 /*grid layout--------------------------*/
 @supports(display:grid){
-	body > * {
+	body > *, main > *{
 		padding:0;
 	}
 	body{
